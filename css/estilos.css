@@ -1,0 +1,55 @@
+*{margin: 0;padding: 0;}
+html{font-family: arial;font-size: 16px;scroll-behavior: smooth;}
+
+.bg1{background-color: inherit}
+.bg2{background-color: darkred}
+.bg3{background-color: beige}
+.bg5{color: darkred}
+
+
+
+h2{font-family: 'Playfair Display', serif;}
+p, .btn1{font-family: 'Raleway', sans-serif;}
+h3,h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+
+#formcontact input[type="checkbox"]:checked{
+    box-shadow: 0 0 0 2px white;
+}
+#formcontact input[type="checkbox"]:checked + label{
+    color: rgba(255, 227, 84);
+    font-weight: bold;
+}
+
+
+@keyframes enterleft{
+    from{transform: translateX(-1000px);
+        opacity: 0;
+    }
+    to{transform: translateX(0);
+        opacity: 4;
+    }
+}
+
+@keyframes enterright{
+    from{transform: translateY(-500px);
+        opacity: -2;
+    }
+    to{transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
+#header, #content, section, #footer{
+    animation-name: enterleft;
+    animation-duration: 2s;
+}
+
+#nav{
+    animation-name: enterright;
+    animation-duration: 3s;
+}
